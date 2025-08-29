@@ -9,7 +9,6 @@ export interface Product {
 }
 
 export const productApi = {
-  // Get all products
   getProducts: async (): Promise<Product[]> => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/products`);
@@ -25,7 +24,6 @@ export const productApi = {
     }
   },
 
-  // Get product by ID
   getProductById: async (id: string): Promise<Product> => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/products/${id}`);

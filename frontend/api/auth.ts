@@ -1,5 +1,4 @@
-// Simple API functions to test backend connection
-const API_BASE_URL = "http://localhost:5000"; // Use your machine's IP from expo output
+const API_BASE_URL = "http://localhost:5000";
 
 export const testConnection = async () => {
   try {
